@@ -1,5 +1,5 @@
 {
-  "name": "passport-apple",
+  "name": "@ladovi/passport-apple",
   "version": "2.0.1",
   "description": "Passport strategy for Sign in with Apple",
   "main": "src/strategy.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ananay/passport-apple.git"
+    "url": "git+https://github.com/ladovi/passport-apple.git"
   },
   "keywords": [
     "apple",
