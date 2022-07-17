@@ -11,15 +11,17 @@ Passport strategy for the new Sign in with Apple feature, now with fetching prof
 
 ⚠️ Important note: Apple will only provide you with the name and email ONCE which is when the user taps "Sign in with Apple" on your app the first time. Keep in mind that you have to store this in your database at this time! For every login after that, Apple will provide you with a unique ID that you can use to lookup the username in your database.
 
+**This is a madified version for Loopack profile creation.**
+
 ## Example
 
 **Live on https://passport-apple.ananay.dev**
 
-**Example repo: https://github.com/ananay/passport-apple-example**
+**Example repo (original): https://github.com/ananay/passport-apple-example**
 
 ## Installation
 Install the package via npm / yarn:
-``` npm install --save passport-apple ```
+``` npm install --save @ladovi/passport-apple ```
 
 You will also need to install & configure `body-parser` if using Express:
 ``` npm install --save body-parser ```
