@@ -322,8 +322,6 @@ Strategy.prototype.authorizationParams = function (options) {
  debugger;
  //options.state = options.state || crypto.randomBytes(5).toString('hex');
  options.response_type = "code id_token";
- options.scope = "name email";
- options.response_mode = "form_post";
  return options;
 }
 
