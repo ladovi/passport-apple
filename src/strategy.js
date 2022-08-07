@@ -189,12 +189,13 @@ Strategy.prototype.authenticate = function (req, options) {
              }
 
              profile = {};
+             let jwt_token = jwt_decode(req.query.id_token);
              if (req.appleProfile) { 
-                 profile.id = req.id_token.sub;
+                 profile.id = jwt_token.sub;
                  profile.email = req.appleProfile.email;
              } else {
-                 profile.id = req.id_token.sub;
-                 profile.email = req.id_token.email;
+                 profile.id = jwt_token.sub;
+                 profile.email = jwt_token.email;
              }
 
              try {
